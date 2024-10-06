@@ -1,6 +1,7 @@
 import pygame
 import random
 import math
+from pygame import mixer
 
 pygame.init()
 
@@ -11,6 +12,8 @@ score = 0
 screen = pygame.display.set_mode((win_wid, win_ht))
 icon = pygame.image.load("spaceship.png")
 background = pygame.image.load("background.png")
+mixer.music.load("battle.mp3")
+mixer.music.play(-1)
 
 pygame.display.set_caption("GolaGoli in space")
 pygame.display.set_icon(icon)
@@ -104,6 +107,8 @@ while running:
                     playerY = 0 
 
             if event.key == pygame.K_SPACE and bullet_state == "ready":
+                bullet_sound = mixer.Sound("missile_fire.mp3")
+                bullet_sound.play()
                 bullet_X = playerX 
                 bullet_Y = playerY 
                 fire_bullet(bullet_X, bullet_Y)
@@ -120,6 +125,8 @@ while running:
         collision = isCollition(enemyX[i], enemyY[i], bullet_X, bullet_Y)
         if collision:  # What will happen after collision
             bullet_Y = playerY
+            blast = mixer.Sound("big_blast.mp3")
+            blast.play()
             bullet_state = "ready"
             score += 1
             print(f"You hit {score} time!!")
