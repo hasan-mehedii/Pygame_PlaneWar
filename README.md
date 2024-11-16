@@ -40,4 +40,4 @@ This project recreates the timeless Fighting between plane vs UFOs, where player
 1. **Install Pygame and Dependencies**: Ensure Python3, Pygame are installed on your system.
 2. **Run Code**: Use the following code in terminal. For example:
    ```sh
-   python3 main.py
+   python3 first.py
