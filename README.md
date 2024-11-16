@@ -23,11 +23,8 @@ This project recreates the timeless Fighting between plane vs UFOs, where player
 
 ## 🖼️ Screenshots
 
-### Main Menu
-![Main Menu](images/menu-screen.png)
-
 ### Gameplay
-![Gameplay](images/game-screenshot.png)
+![Gameplay](images/pygame_planewar.png)
 
 ---
 
