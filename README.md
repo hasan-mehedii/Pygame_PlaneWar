@@ -1,6 +1,6 @@
 # ✈️ Pygame Project: Plane vs Alien
 
-**Developer🙋‍♂️**: Mehedi Hasan
+**Developer🙋‍♂️**: [Mehedi Hasan](https://github.com/mh-MeHeDii)
 
 A basic plane war game vs Alien spaceship where user/gamer can destroy the opponents by firing missiles. 
 
